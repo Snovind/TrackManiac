@@ -1,0 +1,2 @@
+# TrackManiac
+Minimalistic incident tracking.
