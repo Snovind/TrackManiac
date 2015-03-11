@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<project name="Hello World Project" default="jar">
+
+    <target name="compile">
+        <mkdir dir="classes"/>
+        <javac srcdir="." destdir="classes" includeantruntime="false" debug="on"/>
+    </target>
+
+    <target name="jar" depends="compile" description="create jar">
+        <jar destfile="TrackManiac.jar">
+            <fileset dir="classes" includes="**/*.class"/>
+            <manifest>
+                <attribute name="Main-Class" value="trackmaniac.TrackManiac"/>
+            </manifest>
+        </jar>
+    </target>
+</project>
+
